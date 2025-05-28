@@ -18,7 +18,8 @@ Team details follow
 
 ### 495 Students 
 
-495 student name here
+Krishna Patel
+Zakaria Yabarow
 
 ### 394 Students
 
