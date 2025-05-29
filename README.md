@@ -32,7 +32,13 @@ Zakaria Yabarow
 
 ## Prerequisites
 
-List tech stack (including version if possible) on both backend and frondend (Database).
+•	Backend: Python (Django, possibly Flask for specific microservices)
+
+•	Database: PostgreSQL
+
+•	Frontend: HTML, CSS, Bootstrap, JavaScript
+
+•	Tools: Visual Studio Code, GitHub for version control and collaboration
 
 ## Set Up and Installation
 
