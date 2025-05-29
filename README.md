@@ -43,8 +43,6 @@ Zakaria Yabarow
 ## Set Up and Installation
 
 Details on how to set up the project follow.
-
-<
 1.	Required Software for the Project:
 •	Development Tool – Visual Studio Code 
 •	Backend – Python, Django
@@ -56,44 +54,48 @@ During installation:
 • Save the password you create for all applications (Priority - pgAdmin4)
 ________________________________________
 2.	Setting Up PostgreSQL Database
-1.	Open pgAdmin4 (PostgreSQL’s database management tool).
-2.	In the left panel, click the Servers dropdown.
-3.	Right-click on Databases, then select Create → Database.
-4.	Set the database name to: resinbloom_db.
-5.	Click Save.
+•	Open pgAdmin4 (PostgreSQL’s database management tool).
+•	In the left panel, click the Servers dropdown.
+•	Right-click on Databases, then select Create → Database.
+•	Set the database name to: resinbloom_db.
+•	Click Save.
 ________________________________________
 3.	 Cloning the Project Ensure you have VS Code, Python, and Git installed before proceeding.
-1.	Open VS Code.
-2.	Open the terminal (Ctrl + ` in VS Code). 
-3.	Use Git Bash Terminal
-4.	Run the following command to clone the repository: git clone https://github.com/FranklinUniversityCompSciPracticum/SU25_Team1.git
-5.	Navigate into the project directory: cd SU25_Team1
+•	Open VS Code.
+•	Open the terminal (Ctrl + ` in VS Code). 
+•	Use Git Bash Terminal
+•	Run the following command to clone the repository: git clone https://github.com/FranklinUniversityCompSciPracticum/SU25_Team1.git
+•	Navigate into the project directory: cd SU25_Team1
 DO NOT CREATE A NEW FLODER USING ONEDRIVE!
 ________________________________________
  4.   Setting Up the Virtual Environment
-1.	To create a virtual environment using VS Code terminal: 
-For Powershell: python -m venv venv
-For Git Bash (Windows): py -m venv venv 
-2.	Activate the virtual environment: source venv/Scripts/activate
-3.	Install required dependencies: pip install -r requirements.txt
+•	To create a virtual environment using VS Code terminal: 
+1.	For Powershell: python -m venv venv
+2.	For Git Bash (Windows): py -m venv venv 
+•	Activate the virtual environment: source venv/Scripts/activate
+•	Install required dependencies: pip install -r requirements.txt
 ________________________________________
 5.   Creating the .env File
-1.	Create a .env file in the project root directory (inside SU25_Team1, next to manage.py).
-2.	Open .env and add the following content:
-3.	DB_NAME=resinbloom_db
-4.	DATABASE_USER=postgres
-5.	DB_PASSWORD=your-postgres-password 
+•	Create a .env file in the project root directory (inside SU25_Team1, next to manage.py).
+•	Open .env and add the following content:
+•	DB_NAME=resinbloom_db
+•	DATABASE_USER=postgres
+•	DB_PASSWORD=your-postgres-password 
 (Replace your-postgres-password with actual values)
-6.	DB_HOST=localhost
-7.	DB_PORT=5432
+•	DB_HOST=localhost
+•	DB_PORT=5432
 ________________________________________
 6.   Running Database Migrations
-1.	Apply the database migrations: python manage.py migrate
-2.	Create a superuser (save the credentials)
+•	Apply the database migrations: python manage.py migrate
+•	Create a superuser (save the credentials)
 ________________________________________
 7.   Running the Development Server
-1.	Start the Django development server: python manage.py runserver
-2.	Use Ctrl + Click to navigate to http://127.0.0.1:8000/
-3.	Message displayed for successful setup: The install worked successfully! Congratulations! 
+•	Start the Django development server: python manage.py runserver
+•	Use Ctrl + Click to navigate to http://127.0.0.1:8000/
+•	Message displayed for successful setup: The install worked successfully! Congratulations! 
 
->
+
+
+
+
+
