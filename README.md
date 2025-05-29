@@ -1,4 +1,4 @@
-# Your Team Name Here
+# Team Name: SU25_Team1
 
 This is the team repository for <SU25_Team1>
 
