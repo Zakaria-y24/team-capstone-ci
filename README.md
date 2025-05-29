@@ -1,16 +1,16 @@
 # Your Team Name Here
 
-This is the team repository for <your team name here>
+This is the team repository for <SU25_Team1>
 
 ## Project
 
 Project details follow. 
 
 ### Project Name
-Your Project Name goes here
+Resin Bloom
 
 ### Project Description  
-Describe the problem solved and/or what the project is doing
+Resin Bloom is an e-store specializing in decorative resin blocks. These are pre-made items—sealed botanical designs, seasonal motifs, and color-based themes—that users can browse and purchase via a simulated checkout process. 
 
 ## Team
 
