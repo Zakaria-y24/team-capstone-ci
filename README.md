@@ -4,13 +4,31 @@ This is the team repository for <SU25_Team1>
 
 ## Project
 
-Project details follow. 
+To design and develop a fully functional, visually appealing, and secure online e-store that allows customers to browse and purchase pre-made decorative resin blocks. The goal is to create an intuitive user experience that showcases seasonal, color-themed, and botanical designs, while providing a seamless checkout process and administrative product management capabilities. The Resin Bloom project includes the planning, design, development, testing, and deployment of a web-based retail application. The application will be built using Django (Python) for the backend, PostgreSQL for the database, and HTML/CSS/JavaScript with Bootstrap for the frontend. It will not support custom orders, but instead feature a curated inventory of ready-made resin items categorized by color, season, or motif.
 
 ### Project Name
 Resin Bloom
 
 ### Project Description  
 Resin Bloom is an e-store specializing in decorative resin blocks. These are pre-made items—sealed botanical designs, seasonal motifs, and color-based themes—that users can browse and purchase via a simulated checkout process. 
+
+In Scope:
+
+Customer-facing website with product catalog and search/filter features.
+
+Product pages with item descriptions, prices, and images.
+
+Simulated shopping cart and checkout process (no real payment integration).
+
+User account registration and login functionality.
+
+Admin dashboard for managing products (CRUD operations).
+
+Backend database for storing product, order, and user data.
+
+Responsive design for mobile and desktop devices.
+
+Integration of seasonal themes and automated catalog updates.
 
 ## Team
 
