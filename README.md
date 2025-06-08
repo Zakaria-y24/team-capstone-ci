@@ -36,21 +36,21 @@ Team details follow
 
 ### 495 Students 
 
-Krishna Patel
+Zakaria Yabarow - Team Manager
 
-Zakaria Yabarow
+Krishna Patel - Team Lead
 
 ### 394 Students
 
-Tyler Steiner
+Tyler Steiner - Senior Software Developer
 
-Chasten Watkins
+Chasten Watkins - Senior Software Developer
 
 ### 294 Students
 
-Erno Kuhinko
+Erno Kuhinko - Junior Software Developer
 
-Luis Espinal
+Luis Espinal - Junior Software Developer
 
 ## Prerequisites
 
