@@ -24,11 +24,15 @@ Zakaria Yabarow
 
 ### 394 Students
 
-394 Student(s) here
+Tyler Steiner
+
+Chasten Watkins
 
 ### 294 Students
 
-294 Student(s) here
+Erno Kuhinko
+
+Luis Espinal
 
 ## Prerequisites
 
