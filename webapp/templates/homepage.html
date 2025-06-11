@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resin Bloom | Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Resin Bloom</h1>
+        <p>Preserving Nature in Every Piece</p>
+    </header>
+
+    <div class="section-title">Featured Seasonal Products</div>
+
+    <div class="products">
+        <div class="product">
+            <img src="{% static 'images/hexagon.webp' %}" alt="Hexagon Resin Block with Mixed Florals">
+            <h2>Hexagon Botanical Resin Block</h2>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/Square4X4.jpg' %}" alt="Square Resin Block with Pink Flowers">
+            <h2>Square Resin Keepsake with Roses</h2>
+        </div>
+    </div>
+</body>
+</html>
