@@ -27,4 +27,17 @@
 
 .btn {
     font-size: 0.95rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary {
+    border: 2px solid #0d6efd;
+    background-color: transparent;
+    color: #0d6efd;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+    background-color: #0d6efd;
+    color: white;
 }

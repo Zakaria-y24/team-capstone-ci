@@ -4,11 +4,21 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/products.css' %}">
 
-<h1 class="text-center mt-4 mb-5 fw-bold">Our Products</h1>
+<div class="container my-4">
+    <h1 class="text-center mb-4 text-primary">Our Products</h1>
 
-<div class="container">
+    <form method="get" class="mb-4 d-flex justify-content-center">
+        <select name="category" class="form-select w-auto me-2" onchange="this.form.submit()">
+            <option value="">All Categories</option>
+            <option value="flowers" {% if category == 'flowers' %}selected{% endif %}>Flowers</option>
+            <option value="leaves" {% if category == 'leaves' %}selected{% endif %}>Leaves</option>
+            <option value="seasonal" {% if category == 'seasonal' %}selected{% endif %}>Seasonal</option>
+            <option value="misc" {% if category == 'misc' %}selected{% endif %}>Misc</option>
+        </select>
+    </form>
+
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-        {% for product in products %}
+        {% for product in page_obj %}
         <div class="col">
             <div class="card h-100 shadow-sm">
                 {% if product.image %}
@@ -20,11 +30,39 @@
                     <h5 class="card-title">{{ product.name }}</h5>
                     <p class="card-text">{{ product.description }}</p>
                     <p class="fw-bold">${{ product.price }}</p>
-                    <button type="button" class="btn btn-primary mt-auto w-100">Add to Cart</button>
+                    <button type="button" class="btn btn-outline-primary mt-auto w-100" onclick="this.classList.add('active')">Add to Cart</button>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
+
+    {% if page_obj.has_other_pages %}
+    <nav class="mt-5">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.previous_page_number }}{% if category %}&category={{ category }}{% endif %}">Previous</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled"><span class="page-link">Previous</span></li>
+            {% endif %}
+
+            {% for num in page_obj.paginator.page_range %}
+            <li class="page-item {% if page_obj.number == num %}active{% endif %}">
+                <a class="page-link" href="?page={{ num }}{% if category %}&category={{ category }}{% endif %}">{{ num }}</a>
+            </li>
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.next_page_number }}{% if category %}&category={{ category }}{% endif %}">Next</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled"><span class="page-link">Next</span></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
 </div>
 {% endblock %}
