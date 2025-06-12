@@ -159,6 +159,15 @@ ________________________________________
 •	Message displayed for successful setup: The install worked successfully! Congratulations! 
 
 
+8. Loading Sample Products
+To populate the database with sample resin products:
+
+•	Make sure the media/product_images/ folder exists and contains the product images.
+
+•	Run the following script from the project root: python scripts/load_products.py
+
+•	This will add several products to the database with matching image files. If any image file is missing, that product will be skipped
+
 
 
 
