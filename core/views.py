@@ -6,7 +6,7 @@ from core.models import Product
 def home(request):
     return render(request, 'homepage.html')
 
-def about_us(request):
+def aboutUs(request):
     return render(request, 'aboutUs.html')
 
 def products(request):
