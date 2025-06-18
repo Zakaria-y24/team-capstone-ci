@@ -11,6 +11,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('products/', views.products, name='products'),
+    path('manage/', views.admin_dashboard, name='admin_dashboard'), # New Dashboard URL
+    path('manage/products/', views.admin_product_list, name='admin_product_list'),
+    path('manage/products/add/', views.admin_product_create, name='admin_product_create'),
+    path('manage/products/edit/<int:pk>/', views.admin_product_update, name='admin_product_update'),
+    path('manage/products/delete/<int:pk>/', views.admin_product_delete, name='admin_product_delete'),
 ]
 
 if settings.DEBUG:
