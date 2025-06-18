@@ -6,12 +6,12 @@ from core import views
 from django.conf import settings
 from django.conf.urls.static import static
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('products/', views.products, name='products'),
-    path('manage/', views.admin_dashboard, name='admin_dashboard'), # New Dashboard URL
+    path('about/', views.about_us, name='about_us'),  # From main
+    path('manage/', views.admin_dashboard, name='admin_dashboard'),  # From feature/admin-page
     path('manage/products/', views.admin_product_list, name='admin_product_list'),
     path('manage/products/add/', views.admin_product_create, name='admin_product_create'),
     path('manage/products/edit/<int:pk>/', views.admin_product_update, name='admin_product_update'),

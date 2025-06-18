@@ -22,56 +22,64 @@ product_data = [
         "description": "A preserved dome of white daisies in a resin block.",
         "price": 19.99,
         "filename": "Daisy_Dome.jpg",
-        "category": "flowers"
+        "category": "flowers",
+        "stock": 12
     },
     {
         "name": "Lavender Glow Pendant",
         "description": "Lavender stems in a soft violet translucent resin pendant.",
         "price": 18.99,
         "filename": "diy-flower-pendant-1-54.jpg.webp",
-        "category": "flowers"
+        "category": "flowers",
+        "stock": 8
     },
     {
         "name": "Hydrangea Bloom",
         "description": "Vibrant blue hydrangea petals captured in resin.",
         "price": 22.99,
         "filename": "hydrandea.webp",
-        "category": "flowers"
+        "category": "flowers",
+        "stock": 0
     },
     {
         "name": "Maple Leaf Resin",
         "description": "Autumn maple leaves embedded in amber-toned resin.",
         "price": 24.99,
         "filename": "maple_leaf_resin.jpg",
-        "category": "leaves"
+        "category": "leaves",
+        "stock": 16
     },
     {
         "name": "Pinecone Drop",
         "description": "Mini pinecones encased in clear resin for a natural look.",
         "price": 16.99,
         "filename": "pinecone.jfif",
-        "category": "leaves"
+        "category": "leaves",
+        "stock": 9
     },
     {
         "name": "Rose Bloom Cube",
         "description": "A preserved red rose encased in a crystal-clear resin cube.",
         "price": 25.99,
         "filename": "Rose_Bloom_Cube.jfif",
-        "category": "flowers"
+        "category": "flowers",
+        "stock": 7
     },
     {
         "name": "Sunflower Mini Block",
         "description": "Mini sunflowers in a compact block of clear resin.",
         "price": 21.99,
         "filename": "Sunflower_Mini_Block.jpg",
-        "category": "seasonal"
+        "category": "seasonal",
+        "stock": 0
     },
     {
         "name": "Wild Flower Resin",
         "description": "A mix of wildflowers captured in a vivid resin piece.",
         "price": 23.99,
         "filename": "Wild_flower_resin.jpg",
-        "category": "flowers"
+        "category": "flowers",
+        "stock": 14
     },
 ]
 
@@ -90,7 +98,8 @@ for item in product_data:
             name=item["name"],
             description=item["description"],
             price=item["price"],
-            category=item["category"]
+            category=item["category"],
+            stock=item["stock"] 
         )
         product.image.name = f"product_images/{item['filename']}"
         product.save()

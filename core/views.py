@@ -11,6 +11,9 @@ def is_admin(user):
 def home(request):
     return render(request, 'homepage.html')
 
+def about_us(request):
+    return render(request, 'aboutUs.html')
+
 def products(request):
     category = request.GET.get('category')
     product_list = Product.objects.all()
