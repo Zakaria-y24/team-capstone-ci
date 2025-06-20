@@ -3,6 +3,9 @@ from django.shortcuts import render
 from core.models import Product
 
 # Create your views here.
+def about(request):
+    return render(request, 'about.html')
+
 def home(request):
     return render(request, 'homepage.html')
 
