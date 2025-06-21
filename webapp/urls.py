@@ -10,8 +10,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('products/', views.products, name='products'),
-    path('about/', views.about_us, name='about_us'),  # From main
-    path('manage/', views.admin_dashboard, name='admin_dashboard'),  # From feature/admin-page
+    path('about/', views.about_us, name='about_us'),  # Use the correct view name
+    path('manage/', views.admin_dashboard, name='admin_dashboard'),
     path('manage/products/', views.admin_product_list, name='admin_product_list'),
     path('manage/products/add/', views.admin_product_create, name='admin_product_create'),
     path('manage/products/edit/<int:pk>/', views.admin_product_update, name='admin_product_update'),
