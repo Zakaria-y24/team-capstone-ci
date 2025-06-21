@@ -1,5 +1,7 @@
 from django import forms
 from .models import Product
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 
 class ProductForm(forms.ModelForm):
     class Meta:
@@ -12,3 +14,15 @@ class ProductForm(forms.ModelForm):
             'category': forms.Select(attrs={'class': 'form-select'}),
             'image': forms.ClearableFileInput(attrs={'class': 'form-control'}),
         }
+
+class UserRegistrationForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'password1', 'password2')
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields.values():
+            field.widget.attrs.update({'class': 'form-control'})

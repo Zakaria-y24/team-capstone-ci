@@ -1,8 +1,13 @@
 from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404, redirect
 from core.models import Product
-from core.forms import ProductForm
+from core.forms import ProductForm, UserRegistrationForm
 from django.contrib.auth.decorators import user_passes_test
+from django.contrib.auth import login
+from django.views.generic import CreateView
+from django.urls import reverse_lazy
+from django.shortcuts import redirect
+from django.contrib.auth import logout
 
 # Create your views here.
 def is_admin(user):
@@ -11,7 +16,7 @@ def is_admin(user):
 def home(request):
     return render(request, 'homepage.html')
 
-def aboutUs(request):
+def about_us(request):
     return render(request, 'aboutUs.html')
 
 def products(request):
@@ -69,3 +74,17 @@ def admin_product_delete(request, pk):
 @user_passes_test(is_admin)
 def admin_dashboard(request):
     return render(request, 'admin/admin_dashboard.html')
+
+class RegisterView(CreateView):
+    template_name = 'register.html'
+    form_class = UserRegistrationForm
+    success_url = reverse_lazy('home')
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        login(self.request, self.object)
+        return response
+    
+def custom_logout(request):
+    logout(request)
+    return redirect('home')  
