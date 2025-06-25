@@ -14,6 +14,85 @@
         <p>Preserving Nature in Every Piece</p>
     </header>
 
+    <!--Navigation Bar-->
+     <nav class="main-nav" style="
+    background-color: #cc6600;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+">
+    <div class="nav-links" style="
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+    ">
+        <a href="{% url 'home' %}" style="
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        ">Home</a>
+        
+        <a href="{% url 'about_us' %}" style="
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        ">About Us</a>
+        
+        <a href="{% url 'products' %}" style="
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        ">Products</a>
+        
+        <a href="{% url 'login' %}" style="
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        ">Login</a>
+        
+        <a href="{% url 'cart' %}" style="
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        ">Cart</a>
+    </div>
+</nav>
+
+<script>
+    // Wait for DOM to load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all nav links
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        // Add hover effect to each link
+        navLinks.forEach(link => {
+            // Mouse enter event
+            link.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#0047ab';
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            // Mouse leave event
+            link.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '';
+                this.style.transform = '';
+            });
+        });
+    });
+</script>
+
+
     <main class="container my-5">
         {% block content %}{% endblock %}
     </main>
