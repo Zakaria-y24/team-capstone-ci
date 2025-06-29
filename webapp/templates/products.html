@@ -40,13 +40,13 @@
                     </p>
 
                     {% if product.stock > 0 %}
-                        <button 
-                            type="button" 
-                            class="btn btn-outline-primary mt-auto w-100" 
-                            onclick="this.innerText = 'Added'; this.classList.replace('btn-outline-primary', 'btn-success');"
-                        >
-                            Add to Cart
-                        </button>
+                        <form action="{% url 'add_to_cart' product.id %}" method="post">
+                            {% csrf_token %}
+                                <button type="submit" class="btn btn-outline-primary mt-auto w-100">
+                                    Add to Cart
+                                </button>
+                        </form>
+
                     {% else %}
                         <button 
                             type="button" 
