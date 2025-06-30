@@ -51,6 +51,23 @@
             transition: all 0.3s ease;
         ">Products</a>
         
+        {% if user.is_authenticated %}
+        <a href="{% url 'account' %}" style="
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        ">Account</a>
+    
+        <a href="{% url 'logout' %}" style="
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        ">Logout</a>
+    {% else %}
         <a href="{% url 'login' %}" style="
             color: white;
             text-decoration: none;
@@ -58,6 +75,7 @@
             border-radius: 4px;
             transition: all 0.3s ease;
         ">Login</a>
+    {% endif %}    
         
         <a href="{% url 'cart' %}" style="
             color: white;
@@ -102,3 +120,4 @@
     </footer>
 </body>
 </html>
+

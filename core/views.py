@@ -1,11 +1,13 @@
 from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404, redirect
 from core.models import Product
-from core.forms import ProductForm, UserRegistrationForm
-from django.contrib.auth.decorators import user_passes_test
-from django.contrib.auth import login, logout
+from core.forms import ProductForm, UserRegistrationForm, UserUpdateForm
+from django.contrib.auth.decorators import user_passes_test, login_required
+from django.contrib.auth import login, logout, update_session_auth_hash
 from django.views.generic import CreateView
 from django.urls import reverse_lazy
+from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib import messages
 
 # Public views
 def home(request):
@@ -99,3 +101,19 @@ def cart(request):
         'total_price': 0, # Replace with calculated total
     }
     return render(request, 'cart.html', context)
+
+@login_required
+def account_view(request):
+    if request.method == 'POST':
+        form = UserUpdateForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Profile updated successfully.')
+            return redirect('account')
+    else:
+        form = UserUpdateForm(instance=request.user)
+
+    return render(request, 'account.html', {
+        'form': form,
+        'user_data': request.user
+    })
