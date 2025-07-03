@@ -18,68 +18,92 @@ Product.objects.all().delete()
 # Product data (with categories)
 product_data = [
     {
-        "name": "Daisy Dome",
-        "description": "A preserved dome of white daisies in a resin block.",
-        "price": 19.99,
-        "filename": "Daisy_Dome.jpg",
-        "category": "flowers",
-        "stock": 12
+        "name": "Botanical Glow Tea Light Holder",
+        "description": "Elegant resin candle holder featuring real dried greenery—perfect for adding a natural, calming glow to any setting.",
+        "price": 20.00,
+        "filename": "BotanicalGlowTeaLightHolder.webp",
+        "category": "Leaves",
+        "stock": 5
     },
     {
-        "name": "Lavender Glow Pendant",
-        "description": "Lavender stems in a soft violet translucent resin pendant.",
-        "price": 18.99,
-        "filename": "diy-flower-pendant-1-54.jpg.webp",
-        "category": "flowers",
-        "stock": 8
+        "name": "Four Leaf Clover",
+        "description": "A charming resin mini block featuring a four-leaf clover—perfect for a touch of natural luck and simplicity.",
+        "price": 15.00,
+        "filename": "FourLeafClover.webp",
+        "category": "Leaves",
+        "stock": 5
     },
     {
-        "name": "Hydrangea Bloom",
-        "description": "Vibrant blue hydrangea petals captured in resin.",
-        "price": 22.99,
-        "filename": "hydrandea.webp",
-        "category": "flowers",
-        "stock": 0
+        "name": "Leaf Forest Series",
+        "description": "A striking resin piece featuring layered forest leaves, evoking the calm and depth of a quiet woodland.",
+        "price": 28.00,
+        "filename": "LeafForestSeries.jpg",
+        "category": "Leaves",
+        "stock": 5
     },
     {
-        "name": "Maple Leaf Resin",
-        "description": "Autumn maple leaves embedded in amber-toned resin.",
-        "price": 24.99,
-        "filename": "maple_leaf_resin.jpg",
-        "category": "leaves",
-        "stock": 16
+        "name": "Emerald Leaf Resin Block",
+        "description": "A serene green resin block featuring delicate pressed leaves over a swirling emerald backdrop—simple and nature-inspired.",
+        "price": 21.00,
+        "filename": "EmeraldLeafBlock.webp",
+        "category": "Leaves",
+        "stock": 5
     },
     {
-        "name": "Pinecone Drop",
-        "description": "Mini pinecones encased in clear resin for a natural look.",
-        "price": 16.99,
-        "filename": "pinecone.jfif",
-        "category": "leaves",
-        "stock": 9
+        "name": "Coastal Christmas Ornament",
+        "description": "Aqua Christmas Tree with shells and Beach, Beachy Christmas, Resin ornament, Handmade",
+        "price": 16.00,
+        "filename": "CoastalChristmasOrnament.webp",
+        "category": "Seasonal",
+        "stock": 5
     },
     {
-        "name": "Rose Bloom Cube",
-        "description": "A preserved red rose encased in a crystal-clear resin cube.",
-        "price": 25.99,
-        "filename": "Rose_Bloom_Cube.jfif",
-        "category": "flowers",
-        "stock": 7
+        "name": "Blush Garden Resin Slice",
+        "description": "A romantic half-moon resin block showcasing preserved blush roses and ivory blooms, perfect for timeless floral décor.",
+        "price": 49.00,
+        "filename": "BlushGardenResinSlice.jpg",
+        "category": "Flowers",
+        "stock": 5
     },
     {
-        "name": "Sunflower Mini Block",
-        "description": "Mini sunflowers in a compact block of clear resin.",
-        "price": 21.99,
-        "filename": "Sunflower_Mini_Block.jpg",
-        "category": "seasonal",
-        "stock": 0
+        "name": "Gold Flake Autumn Leaves Coaster",
+        "description": "A handcrafted resin coaster featuring delicate autumn leaves and shimmering gold flakes, evoking the warmth of fall.",
+        "price": 22.00,
+        "filename": "GoldFlakeAutumnLeavesCoaster.webp",
+        "category": "Seasonal",
+        "stock": 5
     },
     {
-        "name": "Wild Flower Resin",
-        "description": "A mix of wildflowers captured in a vivid resin piece.",
-        "price": 23.99,
-        "filename": "Wild_flower_resin.jpg",
-        "category": "flowers",
-        "stock": 14
+        "name": "Ocean Breeze Shell Pyramid",
+        "description": "A coastal-inspired resin pyramid filled with seashells and ocean-blue hues, bringing seaside serenity to any space.",
+        "price": 31.00,
+        "filename": "OceanBreezeShellPyramid.jpg",
+        "category": "Miscellaneous",
+        "stock": 5
+    },
+    {
+        "name": "Golden Fern Sunset Panel",
+        "description": "Gold fern dried plant with Wooden arch frame.",
+        "price": 34.00,
+        "filename": "GoldenFernSunsetPanel.webp",
+        "category": "Leaves",
+        "stock": 5
+    },
+    {
+        "name": "Lavender Bloom Crystal Tray",
+        "description": "A handcrafted resin tray featuring real lavender blooms and crystal accents for a calming, elegant touch.",
+        "price": 29.00,
+        "filename": "LavenderBloomCrystalTray.jpg",
+        "category": "Miscellaneous",
+        "stock": 5
+    },
+    {
+        "name": "Daisy Dome LED Square Block",
+        "description": "Daisy Dome LED Block with real pressed flowers and soft LED lights—simple, modern, and elegant.",
+        "price": 32.00,
+        "filename": "Daisy_Dome_LED.png",
+        "category": "Flowers",
+        "stock": 5
     },
 ]
 
