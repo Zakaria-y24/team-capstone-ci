@@ -10,9 +10,11 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "webapp.settings")
 django.setup()
 
-from core.models import Product
+from core.models import CartItem, Product
 
-# Wipe existing products (optional)
+# Wipe existing products and cart items (optional)
+CartItem.objects.all().delete()
+
 Product.objects.all().delete()
 
 # Product data (with categories)
@@ -39,7 +41,7 @@ product_data = [
         "price": 28.00,
         "filename": "LeafForestSeries.jpg",
         "category": "Leaves",
-        "stock": 5
+        "stock": 0
     },
     {
         "name": "Emerald Leaf Resin Block",
