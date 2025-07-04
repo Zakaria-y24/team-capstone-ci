@@ -95,13 +95,6 @@ def custom_logout(request):
     logout(request)
     return redirect('home')
 
-def cart(request):
-    context = {
-        'cart_items': [], # Replace with cart items
-        'total_price': 0, # Replace with calculated total
-    }
-    return render(request, 'cart.html', context)
-
 @login_required
 def account_view(request):
     if request.method == 'POST':

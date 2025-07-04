@@ -10,10 +10,10 @@
     <form method="get" class="mb-4 d-flex justify-content-center">
         <select name="category" class="form-select w-auto me-2" onchange="this.form.submit()">
             <option value="">All Categories</option>
-            <option value="flowers" {% if category == 'flowers' %}selected{% endif %}>Flowers</option>
-            <option value="leaves" {% if category == 'leaves' %}selected{% endif %}>Leaves</option>
-            <option value="seasonal" {% if category == 'seasonal' %}selected{% endif %}>Seasonal</option>
-            <option value="misc" {% if category == 'misc' %}selected{% endif %}>Misc</option>
+            <option value="Flowers" {% if category == 'Flowers' %}selected{% endif %}>Flowers</option>
+            <option value="Leaves" {% if category == 'Leaves' %}selected{% endif %}>Leaves</option>
+            <option value="Seasonal" {% if category == 'Seasonal' %}selected{% endif %}>Seasonal</option>
+            <option value="Misc" {% if category == 'Misc' %}selected{% endif %}>Misc</option>
         </select>
     </form>
 
