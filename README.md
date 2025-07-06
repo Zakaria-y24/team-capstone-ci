@@ -169,6 +169,8 @@ To populate the database with sample resin products:
 •	This will add several products to the database with matching image files. If any image file is missing, that product will be skipped
 
 
+test
+
 
 
 
